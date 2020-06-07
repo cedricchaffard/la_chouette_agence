@@ -506,8 +506,7 @@ button {
 }
 
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
-    box-shadow: none;
+    width:100%;
 }
 
 .scrollToTop {
@@ -651,7 +650,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+
 }
 
 .container {
@@ -713,7 +712,7 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+
 }
 
 .med-width-whitespace {
@@ -722,9 +721,7 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-    color: #333333!important;
-}
+
 
 h4 {
     color: #333333!important;
@@ -774,9 +771,7 @@ h4 {
     background-color: #F3976C;
 }
 
-.tc-white {
-    color: #F3976C!important;
-}
+
 
 .btn-atomic-tangerine {
     background: #F3976C;
@@ -805,8 +800,8 @@ h4 {
 }
 
 .icon-dark-slate-blue {
-    color: #364577!important;
-    border-color: #364577!important;
+    color: #364577;
+    border-color: #364577;
 }
 
 .bg-dots-bg {
@@ -1040,3 +1035,238 @@ h4 {
         text-align: center;
     }
 }
+
+/*LCA WEBSITE IMPROVEMENTS*/
+
+#bloc2_introduction{
+    font-size: 1.6em;
+    padding: 0 15%;
+}
+
+#maxime{
+    font-size: 1.6em;
+}
+
+/*FORM LAYOUT ENHANCEMENT*/
+#bloc-7{
+    padding:0;
+    display: flex;
+    justify-content: center;
+}
+
+#bloc-4-portfolio .bloc-lg{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+#bloc-4-portfolio p:first-child{
+    font-size: 1em;
+    width: 50vw;
+}
+
+#bloc-6{
+    display: flex;
+    justify-content:center;
+}
+
+#bloc-6 p{
+    font-size: 1.4em;
+    color: white;
+    max-width:100%;
+}
+
+#bloc-6 h1{
+    text-align: center;
+}
+
+#bloc-7 p{
+    font-size: 1em;
+    line-height: 4vh;
+}
+
+#bloc-8 .container{
+    display: flex;
+    justify-content: center;
+}
+
+#bloc-8 .row:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bloc-8 ul{
+    list-style: none;
+    padding: 0;
+}
+
+/*LCA CONTACT PAGE*/
+
+#form_1{
+
+    padding: 0 5%;
+}
+
+.form-group{
+    text-align: left;
+    font-size: 1.3em;
+    padding-bottom: 1vh;
+}
+
+/*DARK MODE TOGGLE BUTTON*/
+
+.light-toggle{
+    position: fixed;
+    display: inline-block;
+    width: 43px;
+    height: 16px;
+    z-index: 1;
+    left: 1%;
+    top: 10%;
+}
+
+.light-toggle input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #CCC;
+    transition: .4s;
+}
+
+.slider::before{
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider{
+    background-color: rgb(243	151	108);
+}
+
+input:focus +.slider{
+    -webkit-box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px rgb(243	151	108);
+}
+
+input:checked +.slider::before{
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    -o-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round{
+    border-radius: 34px;
+}
+
+.slider.round::before{
+    border-radius: 50%;
+}
+
+/*DARK MODE SETUP*/
+
+body .bgc-white{
+    background: white;
+}
+
+body.dark .bgc-white{
+    background:#333;
+    color:#FFF;
+}
+
+/*COMMERCIAL PROPOSAL BLOC-3-WHAT-I-DO*/
+body.dark h1, h2{
+    color:white;
+}
+
+body.dark h2{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+body.dark .black-background{
+    max-width: 800px;
+}
+
+body.dark #bloc-3-what-i-do p{
+    font-size: 18px;
+}
+
+.black-background{
+    max-width: 800px;
+}
+
+
+body.dark .btn-atomic-tangerine{
+    background:black;
+}
+
+body.dark .l-bloc .navbar a, .l-bloc p a{
+    color:white;
+}
+
+body.dark .bgc-white .icon-dark-slate-blue{
+    color: white;
+    border-color: white;
+}
+
+body.dark #bloc-5-cta h2{
+    color: white;
+}
+
+body.dark #bloc-8{
+    background: #333;
+}
+
+body.dark .d-bloc a .icon-md{
+    color: white;
+}
+
+body.dark #bloc-8 ul, a{
+    color: white;
+}
+
+body.dark .bloc-bg-texture::before {
+    opacity:0.8;
+}
+
+/*DARK MODE MEDIA QUERIES FOLLOWING COMPUTER SETUP
+@media (prefers-color-scheme: light){
+.bgc-white{
+background-color: #FFF;
+color:#333;
+}
+}
+
+@media (prefers-color-scheme: dark){
+.bgc-white{
+background-color: #333;
+color:#FFF;
+}
+
+}
+@media (prefers-color-scheme: dark){
+#bloc-2-services{
+background-color: #333;
+color:#FFF;
+}
+}
+*/
