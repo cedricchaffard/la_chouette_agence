@@ -1038,9 +1038,28 @@ h4 {
 
 /*LCA WEBSITE IMPROVEMENTS*/
 
+h2{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#bloc-1-hero h1{
+    color: #FFF;
+    font-size: 2.4em;
+}
+
+#bloc-1-hero h2{
+    font-size: 1em;
+}
+
 #bloc2_introduction{
     font-size: 1.6em;
     padding: 0 15%;
+    color: #000;
+}
+
+.l-bloc p a{
+    color:black;
 }
 
 #maxime{
@@ -1048,10 +1067,20 @@ h4 {
 }
 
 /*FORM LAYOUT ENHANCEMENT*/
-#bloc-7{
-    padding:0;
-    display: flex;
-    justify-content: center;
+
+#bloc-0 img{
+    margin-left: 0.5vh;
+}
+
+.bloc{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.black-background{
+    max-width: 800px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 #bloc-4-portfolio .bloc-lg{
@@ -1066,6 +1095,19 @@ h4 {
 #bloc-4-portfolio p:first-child{
     font-size: 1em;
     width: 50vw;
+}
+
+#bloc-4-portfolio a{
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-row{
+    margin-bottom: 0;
+}
+
+#bloc-5-cta h2{
+    font-size: 2em;
 }
 
 #bloc-6{
@@ -1083,9 +1125,25 @@ h4 {
     text-align: center;
 }
 
+#bloc-7{
+    padding:0;
+    display: flex;
+    justify-content: center;
+}
+
 #bloc-7 p{
     font-size: 1em;
     line-height: 4vh;
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2vh;
+}
+
+.d-bloc a .icon-md{
+    color: #FFF;
 }
 
 #bloc-8 .container{
@@ -1096,12 +1154,19 @@ h4 {
 #bloc-8 .row:nth-child(3){
     display: flex;
     justify-content: center;
-    align-items: center;
+    color: #FFF;
+    font-weight: 900;
+    font-size: 1.2em;
 }
 
 #bloc-8 ul{
-    list-style: none;
+    list-style:square;
     padding: 0;
+    text-decoration: underline;
+}
+
+#bloc-8 p{
+    font-size: 1em;
 }
 
 /*LCA CONTACT PAGE*/
@@ -1119,14 +1184,19 @@ h4 {
 
 /*DARK MODE TOGGLE BUTTON*/
 
+#switch{
+    color: #000;
+    display:flex;
+    justify-content: center;
+    position: absolute;
+
+}
+
 .light-toggle{
-    position: fixed;
+    position: absolute;
     display: inline-block;
     width: 43px;
     height: 16px;
-    z-index: 1;
-    left: 1%;
-    top: 10%;
 }
 
 .light-toggle input{
@@ -1192,7 +1262,6 @@ body.dark .bgc-white{
     color:#FFF;
 }
 
-/*COMMERCIAL PROPOSAL BLOC-3-WHAT-I-DO*/
 body.dark h1, h2{
     color:white;
 }
@@ -1204,9 +1273,24 @@ body.dark h2{
 
 body.dark .black-background{
     max-width: 800px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+body.dark #bloc2_introduction{
+    color: #FFF;
+}
+
+body.dark #bloc2_introduction a{
+    color: #FFF;
+    text-decoration: underline;
 }
 
 body.dark #bloc-3-what-i-do p{
+    font-size: 18px;
+}
+
+#bloc-3-what-i-do p{
     font-size: 18px;
 }
 
@@ -1214,13 +1298,17 @@ body.dark #bloc-3-what-i-do p{
     max-width: 800px;
 }
 
-
 body.dark .btn-atomic-tangerine{
     background:black;
 }
 
-body.dark .l-bloc .navbar a, .l-bloc p a{
+body.dark .l-bloc .navbar a{
     color:white;
+}
+
+body.dark .l-bloc p a{
+    color: white;
+    text-decoration: underline;
 }
 
 body.dark .bgc-white .icon-dark-slate-blue{
