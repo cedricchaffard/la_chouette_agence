@@ -1072,6 +1072,22 @@ h2{
     margin-left: 0.5vh;
 }
 
+.nav > li > a:focus{
+    text-decoration: underline;
+}
+
+.btn-atomic-tangerine:focus{
+    text-decoration: underline;
+}
+
+.btn-atomic-tangerine{
+    background-color: #B65E41;
+}
+
+.bgc-atomic-tangerine{
+    background-color: #B65E41;
+}
+
 .bloc{
     padding-left: 2%;
     padding-right: 2%;
@@ -1081,6 +1097,25 @@ h2{
     max-width: 800px;
     padding-left: 0;
     padding-right: 0;
+}
+
+.d-bloc .panel, .l-bloc{
+    color: rgba(0, 0, 0, 1)
+}
+
+#bloc-3-what-i-do h2{
+    background-color: rgba(104, 90, 60, .6);
+    box-shadow: 5px 5px rgba(0,0,0,.2);
+}
+
+#bloc-3-what-i-do p{
+    font-size: 18px;
+    background: rgba(104, 90, 60, .6);
+    box-shadow: 5px 5px rgba(0,0,0,.2);
+}
+
+#bloc-3-what-i-do p a:focus{
+    border: 1px solid #000;
 }
 
 #bloc-4-portfolio .bloc-lg{
@@ -1100,6 +1135,10 @@ h2{
 #bloc-4-portfolio a{
     display: flex;
     justify-content: center;
+}
+
+#bloc-4-portfolio h2{
+    color: #000000;
 }
 
 .portfolio-row{
@@ -1146,12 +1185,12 @@ h2{
     color: #FFF;
 }
 
-#bloc-8 .container{
+#bloc-8-index .container{
     display: flex;
     justify-content: center;
 }
 
-#bloc-8 .row:nth-child(3){
+#bloc-8-index .row:nth-child(3){
     display: flex;
     justify-content: center;
     color: #FFF;
@@ -1159,21 +1198,35 @@ h2{
     font-size: 1.2em;
 }
 
-#bloc-8 ul{
+#bloc-8-index ul{
     list-style:square;
     padding: 0;
     text-decoration: underline;
 }
 
-#bloc-8 p{
-    font-size: 1em;
+#bloc-8-index p{
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.scrollToTop{
+    background: #000;
 }
 
 /*LCA CONTACT PAGE*/
 
+#bloc-0-contact h2{
+    color: #121212;
+    font-size: 1em;
+}
+
+body.dark #bloc-0-contact h2{
+    color: #FFFFFF;
+}
+
 #form_1{
 
-    padding: 0 5%;
+    padding: 1vh;
 }
 
 .form-group{
@@ -1182,21 +1235,66 @@ h2{
     padding-bottom: 1vh;
 }
 
+#bloc-7 .col-sm-6{
+    width: 100%;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+@media (max-width:400px){
+    #bloc-7 button{
+        max-width: 20vh;
+    }
+}
+
+@media (max-width:991px){
+    #bloc-7 button{
+        max-width: 20vh;
+    }
+}
+
+#bloc-7 button{
+    width: 40vh;
+}
+
+#bloc-7 p{
+    text-align: center;
+    margin-top: 10vh;
+}
+
+#bloc-7 .bloc-lg{
+    padding-bottom: 10vh;
+}
+
+#bloc-8 p{
+    font-size: 1em;
+    text-align: center;
+}
+
+#bloc-8 p a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#bloc-8 .bloc-sm{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
 /*DARK MODE TOGGLE BUTTON*/
 
 #switch{
     color: #000;
     display:flex;
-    justify-content: center;
-    position: absolute;
-
+    justify-content: flex-start;
 }
 
 .light-toggle{
     position: absolute;
-    display: inline-block;
     width: 43px;
     height: 16px;
+    left: 2vh;
 }
 
 .light-toggle input{
@@ -1228,7 +1326,7 @@ h2{
 }
 
 input:checked + .slider{
-    background-color: rgb(243	151	108);
+    background-color: #B65E41;
 }
 
 input:focus +.slider{
@@ -1258,8 +1356,8 @@ body .bgc-white{
 }
 
 body.dark .bgc-white{
-    background:#333;
-    color:#FFF;
+    background:#121212;
+    color:#FFFFFF;
 }
 
 body.dark h1, h2{
@@ -1278,11 +1376,11 @@ body.dark .black-background{
 }
 
 body.dark #bloc2_introduction{
-    color: #FFF;
+    color: #FFFFFF;
 }
 
 body.dark #bloc2_introduction a{
-    color: #FFF;
+    color: #FFFFFF;
     text-decoration: underline;
 }
 
@@ -1290,50 +1388,58 @@ body.dark #bloc-3-what-i-do p{
     font-size: 18px;
 }
 
-#bloc-3-what-i-do p{
-    font-size: 18px;
+body.dark #bloc-3-what-i-do p a{
+    font-size: 22px;
 }
 
-.black-background{
-    max-width: 800px;
+body.dark #bloc-4-portfolio h2{
+    color: #FFFFFF;
 }
 
 body.dark .btn-atomic-tangerine{
-    background:black;
+    background:#121212;
 }
 
 body.dark .l-bloc .navbar a{
-    color:white;
+    color: #FFFFFF;
 }
 
 body.dark .l-bloc p a{
-    color: white;
+    color: #FFFFFF;
     text-decoration: underline;
 }
 
 body.dark .bgc-white .icon-dark-slate-blue{
-    color: white;
-    border-color: white;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
 }
 
 body.dark #bloc-5-cta h2{
-    color: white;
+    color: #FFFFFF;
 }
 
-body.dark #bloc-8{
-    background: #333;
+body.dark #bloc-8-index{
+    background: #121212;
 }
 
 body.dark .d-bloc a .icon-md{
-    color: white;
+    color: #FFFFFF;
 }
 
-body.dark #bloc-8 ul, a{
-    color: white;
+body.dark #bloc-8-index ul, a{
+    color: #FFFFFF;
 }
 
-body.dark .bloc-bg-texture::before {
-    opacity:0.8;
+body.dark .navbar-toggle{
+    background-color: #FFFFFF;
+}
+
+body.dark .scrollToTop{
+    background: #FFFFFF;
+}
+
+body.dark .btn-d, .btn-d:hover, .btn-d:focus{
+    color: #000000;
 }
 
 /*DARK MODE MEDIA QUERIES FOLLOWING COMPUTER SETUP
