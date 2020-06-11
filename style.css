@@ -1220,10 +1220,6 @@ h2{
     font-size: 1em;
 }
 
-body.dark #bloc-0-contact h2{
-    color: #FFFFFF;
-}
-
 #form_1{
 
     padding: 1vh;
@@ -1373,6 +1369,10 @@ body.dark .black-background{
     max-width: 800px;
     padding-left: 0;
     padding-right: 0;
+}
+
+body.dark #bloc-0-contact h2{
+    color: #FFFFFF;
 }
 
 body.dark #bloc2_introduction{
