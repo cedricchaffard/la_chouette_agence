@@ -897,8 +897,8 @@ h4 {
     h6,
     p,
     #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
+        padding-left: 12px!important;
+        padding-right: 12px!important;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -1225,8 +1225,10 @@ body.dark #bloc-7 .btn-atomic-tangerine{
 }
 
 #bloc-8-index p{
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 900;
+    width: 60vh;
+    padding-bottom: 3vh;
 }
 
 .scrollToTop{
@@ -1282,9 +1284,15 @@ body.dark #bloc-7 .btn-atomic-tangerine{
     padding-top: 3vh;
 }
 
+#bloc-7 h3{
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+}
+
 #bloc-8 p{
     font-size: 1em;
     text-align: center;
+    color: #FFFFFF;
 }
 
 #bloc-8 p a{
@@ -1303,6 +1311,9 @@ body.dark #bloc-7 .btn-atomic-tangerine{
     margin-bottom: 3vh;
     padding:0;
     cursor: pointer;
+    font-size: .8em;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 #bloc-8 li{
