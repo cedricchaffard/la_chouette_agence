@@ -22,13 +22,11 @@ btnToggle.addEventListener("click", () =>{
 
     {
         $('.img-clair').attr('src','img/la-chouette-agence.png');
-        $('.logo-clair').attr('src','img/logo.png');
 
     }else
 
     {
         $('.img-clair').attr('src','img/la-chouette-agence_white.png');
-        $('.logo-clair').attr('src','img/logo copie.png');
 
     }
 
