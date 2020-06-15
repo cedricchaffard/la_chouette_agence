@@ -680,7 +680,7 @@ p {
 }
 
 .tight-width-whitespace {
-/*    max-width: 400px;*/
+    /*    max-width: 400px;*/
     margin: auto auto auto auto;
 }
 
@@ -699,8 +699,8 @@ p {
 }
 
 .social {
-    max-width: 400px;
-    margin: auto auto auto auto;
+    max-width: 200px;
+    margin: auto;
 }
 
 h2 {
@@ -1077,6 +1077,14 @@ body .bgc-white{
     margin-left: 0.5vh;
 }
 
+#specialist{
+    font-size: .65em;
+    font-family: inherit;
+    }
+
+    margin-left: 1%extracted1();
+}
+
 #bloc-0 .bloc-sm{
     padding: 0;
 }
@@ -1175,14 +1183,12 @@ body .bgc-white{
 }
 
 #bloc-3-what-i-do h2{
-    background-color: rgba(104, 90, 60, .6);
-    box-shadow: 5px 5px rgba(0,0,0,.2);
+    background-image: url(img/texture-paper.png);
 }
 
 #bloc-3-what-i-do p{
     font-size: 18px;
-    background: rgba(104, 90, 60, .6);
-    box-shadow: 5px 5px rgba(0,0,0,.2);
+    background-image: url(img/lines-h2-bg.png)
 }
 
 #bloc-3-what-i-do p a:focus{
@@ -1284,10 +1290,11 @@ footer .col-sm-4{
     font-size: 1.2em;
     font-weight: 900;
     padding-bottom: 2vh;
+    background-image: url(img/lines-h2-bg.png)
 }
 
 footer .bloc-sm{
-    padding-bottom: 5vh;
+    padding-bottom: 0;
 }
 
 /*SITEMAP MENU*/
@@ -1307,13 +1314,15 @@ footer .bloc-sm{
 #terms-of-use ul{
     position: absolute;
     z-index: 1000;
-    max-height: 0;
-    left: 0;
+    max-height: 15em; /*Hidden menu Value = 0*/
+    left: 0px;
+    top: 2.5vh;
     right: 0;
     overflow: hidden;
     -moz-transition: .8s all .3s;
     -webkit-transition: .8s all .3s;
     transition: .8s all .3s;
+    font-size: .8em;
 }
 
 #terms-of-use li:hover ul{
@@ -1324,8 +1333,45 @@ footer .bloc-sm{
     background: #000000;
 }
 
-#bloc-8-index .col-sm-4{
-    padding-bottom: 6vh;
+#footer-terms{
+    display: flex;
+    justify-content: center;
+    background: #B65E41;
+    height:10vh;
+    font-size: .9em;
+}
+
+@media (max-width:400px){
+    #terms-of-use, #terms-of-use ul{
+        font-size: .8em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #terms-of-use{
+        width: 100%;
+        height: 10vh;
+    }
+    /*RESPONSIVE SITEMAP MENU*/
+    #terms-of-use ul{
+        position: relative;
+        height: 7em;
+        top: 0;
+    }
+    #footer-terms{
+        font-size: 1em;
+        padding: 1vh;
+        margin-bottom: 0;
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer p:first-child{
+    padding-top: 1vh;
 }
 
 /*LCA CONTACT PAGE*/
@@ -1334,14 +1380,25 @@ footer .bloc-sm{
     padding: 0;
 }
 
+#bloc-6 h1{
+    font-size: 2.5em;
+}
+
 #form_1>button{
     padding: 1vh;
+}
+
+#form_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center
 }
 
 .form-group{
     text-align: left;
     font-size: 1.3em;
     padding-bottom: 1vh;
+    width: 100%;
 }
 
 #bloc-7 .col-sm-6{
@@ -1405,29 +1462,22 @@ footer .bloc-sm{
     justify-content: space-around;
 }
 
-@media (max-width:400px){
-    #terms-of-use, #terms-of-use ul{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-}
-
-
 /*FOOTER TERMS OF USE LAYOUT*/
 
 #terms-of-use li{
-    padding-right: 8vh;
+    padding-right: 3vh;
+    color: #FFFFFF;
 }
 
 #terms-of-use li:hover{
-    opacity:.5;
-    color: #000000;
+    color: #23527c;
 }
 
+/*
 #bloc-8 .bloc-sm{
-    padding-bottom: 5vh;
+padding-bottom: 5vh;
 }
+*/
 
 /*DARK MODE TOGGLE BUTTON*/
 
@@ -1438,10 +1488,14 @@ footer .bloc-sm{
 }
 
 #switch h2{
-    color: #000000;
+    color: #FFFFFF;
     font-size: .8em;
     font-family: inherit;
     font-weight: normal;
+}
+
+#switch .contact{
+    color: #000000;
 }
 
 .light-toggle{
@@ -1590,6 +1644,19 @@ body.dark #bloc-8-index{
     background: #121212;
 }
 
+body.dark #footer-terms{
+    background: #121212;
+}
+
+body.dark #footer-terms li:hover{
+    color: #B65E41;
+}
+
+body.dark a:focus,
+body.dark a:hover {
+    color: #B65E41;
+}
+
 body.dark .d-bloc a .icon-md{
     color: #FFFFFF;
 }
@@ -1602,6 +1669,15 @@ body.dark #bloc-8-index ul, a{
     color: #FFFFFF;
 }
 
+body.dark #footer-terms{
+    background: #121212;
+    padding: 1vh;
+}
+
+body.dark #bloc-8{
+    padding: 0;
+}
+
 body.dark .navbar-toggle{
     background-color: #FFFFFF;
 }
@@ -1611,7 +1687,7 @@ body.dark .scrollToTop{
 }
 
 body.dark .btn-d, .btn-d:hover, .btn-d:focus{
-    color: #000000;
+    color: #121212;
 }
 
 /*DARK MODE MEDIA QUERIES FOLLOWING COMPUTER SETUP

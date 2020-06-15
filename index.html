@@ -35,13 +35,14 @@
                 <div class="container bloc-sm">
                     <nav class="navbar row">
                         <img class="img-clair" src="img/la-chouette-agence.png" alt="LCA, La Chouette Agence, votre agence de communication web à Lyon" height="40" />
+                        <p id="specialist">LCA - Le spécialiste lyonnais de la création digitale </p>
                         <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
                             <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                         </button>
                         <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
                             <ul class="site-navigation nav navbar-nav">
                                 <li>
-                                    <a href="index.html" tabindex="1">Accueil</a>
+                                    <a href="index.html">Accueil</a>
                                 </li>
                                 <li>
                                     <a href="lca_contact.html" tabindex="2">Contact</a>
@@ -57,9 +58,9 @@
                     <!--DARK MODE TOGGLE BUTTON-->
                     <div id="switch" class="container bloc-sm">
                         <h2 class="dark-mode">Mode sombre</h2>
-                        <label for="switchButton" class="light-toggle">
-                            <input id="switchButton" type="checkbox" class="btn-toggle" tabindex="3">
-                            <span class="slider round"></span>
+                        <label for="nav-btn" class="light-toggle">
+                            <input id="nav-btn" type="checkbox" class="btn-toggle" checked>
+                            <span class="slider round" id="nav"></span>
                         </label>
                     </div>
                     <header class="container bloc-lg">
@@ -133,8 +134,11 @@
                         <div class="row tight-width-whitespace black-background">
                             <div class="col-sm-12">
                                 <h2 class="mg-md text-center tc-white">
-                                    Amoureux de la région Auvergne Rhône-Alpes et de la ville de Lyon, les collaborateurs de notre agence de communication mettent à votre disposition toute leur créativité pour augmenter votre taux de conversion.
+                                    L'entreprenariat local, notre mission, notre passion
                                 </h2>
+                                <p class="text-center white">
+                                    Amoureux de la région Auvergne Rhône-Alpes et de la ville de Lyon, les collaborateurs de notre agence de communication mettent à votre disposition toute leur créativité pour augmenter votre taux de conversion.
+                                </p>
                                 <p class="text-center white">
                                     Partisans du développement local, notre équipe peut intervenir tant dans la création de votre site, custom ou s'appuyant sur un CMS, tant dans l'optimisation d'un matériel existant. Vos idées, vos projets sont notre leitmotiv. Charte graphique cohérente, navigation intuitive et adaptative à tous les types d'interface alliés à un référencement étudié seront des atouts majeurs dans votre positionnement en premières places des recherches. Aucunes hésitations,
                                     <a href="lca_contact.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" tabindex="4">je contacte</a>
@@ -220,6 +224,27 @@
                             <p class="text-center white">
                                 LCA - La chouette agence - votre agence web à Lyon, située dans le 1er arrondissement , entre les pentes de la Croix-rousse et le Vieux Lyon.<br>
                             </p>
+                            <div id="footer-terms">
+                                <ul id="terms-of-use">
+                                    <li><a href="#"></a>Partenaires
+                                        <ul>
+                                            <li><a href="voiture.com">voiture.com</a></li>
+                                            <li><a href="pizza.com">pizza.com</a></li>
+                                            <li><a href="matoiture.com">matoiture.com</a></li>
+                                            <li><a href="immobilierseo.com">immobilierseo.com</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="termsofuse.com">Conditions d'utilisations</a></li>
+                                    <li><a href="privacypolicy.com">Confidentialité</a></li>
+                                    <li><a href="cookies.com">Cookies</a></li>
+                                    <li><a href="sitemap.com"></a>Plan du site
+                                        <ul>
+                                            <li><a href="index.html">Accueil</a></li>
+                                            <li><a href="lca_contact.html">Contact</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="row row-no-gutters social">
                                 <div class="col-sm-3">
                                     <div class="text-center">
@@ -240,29 +265,6 @@
                                     <div class="text-center">
                                         <a class="social" href="index.html" tabindex="13"><span class="fa fa-instagram icon-md"></span></a>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <ul id="terms-of-use">
-                                        <li><a href="#"></a>Partenaires
-                                            <ul>
-                                                <li><a href="voiture.com" tabindex="14"></a>voiture.com</li>
-                                                <li><a href="pizza.com" tabindex="15"></a>pizza.com</li>
-                                                <li><a href="matoiture.com" tabindex="16"></a>matoiture.com</li>
-                                                <li><a href="immobilierseo.com" tabindex="17"></a>immobilierseo.com</li>
-                                            </ul>
-                                        </li>
-                                        <li>Conditions d'utilisations</li>
-                                        <li>Confidentialité</li>
-                                        <li>Cookies</li>
-                                        <li><a href="#"></a>Plan du site
-                                            <ul>
-                                                <li><a href="index.html"></a>Accueil</li>
-                                                <li><a href="lca_contact.html"></a>Contact</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
