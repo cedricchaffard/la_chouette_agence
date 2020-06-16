@@ -1140,7 +1140,8 @@ body .bgc-white{
 
 #bloc-1-hero p a{
     color: #FFFFFF;
-    text-decoration:underline;
+    text-transform: uppercase;
+    font-size: .8em;
 }
 
 #bloc-2-services div:first-child{
@@ -1191,9 +1192,11 @@ body .bgc-white{
     background-image: url(img/lines-h2-bg.png)
 }
 
+/*
 #bloc-3-what-i-do p a:focus{
     border: 1px solid #000000;
 }
+*/
 
 @media (max-width: 400px){
     #bloc-4-portfolio section,.bloc-lg, h2{
@@ -1538,9 +1541,9 @@ input:checked + .slider{
 }
 
 input:focus +.slider{
-    -webkit-box-shadow: 0 0 1px #2196F3;
-    box-shadow: 0 0 1px #2196F3;
-    border: solid 1px #2196F3;
+    -webkit-box-shadow: 0 0 1px #000000;
+    box-shadow: 0 0 1px #000000;
+    border: solid 1px #000000;
 }
 
 input:checked +.slider::before{
@@ -1610,9 +1613,11 @@ body.dark #bloc-3-what-i-do p{
     font-size: 18px;
 }
 
+/*
 body.dark #bloc-3-what-i-do p a{
     font-size: 22px;
 }
+*/
 
 body.dark #bloc-4-portfolio h2{
     color: #FFFFFF;
@@ -1653,7 +1658,15 @@ body.dark #footer-terms li:hover{
 }
 
 body.dark a:focus,
-body.dark a:hover {
+body.dark a:hover{
+    color: #B65E41;
+}
+
+body.dark #bloc-2-services a:first-child{
+    color: #FFFFFF;
+}
+
+body.dark #bloc-2-services a:first-child:hover, body.dark #bloc-2-services a:first-child:focus{
     color: #B65E41;
 }
 
