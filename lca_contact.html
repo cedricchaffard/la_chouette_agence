@@ -78,28 +78,28 @@
                             Parlez-nous de votre projet en complétant le formulaire ci-dessous.
                         </h2>
                         <div class="col-sm-6">
-                            <form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+                            <form id="form_1" novalidate>
                                 <div class="form-group">
                                     <label for="name">Nom
                                     </label>
-                                    <input id="name" type="text" class="form-control" aria-label="Name" aria-describedby="Name" required tabindex="4">
+                                    <input id="name" type="text" class="form-control" aria-labelledby="Nom" required tabindex="4">
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Adresse email
                                     </label>
-                                    <input id="email" class="form-control" type="email" required tabindex="5">
+                                    <input id="email" class="form-control" type="email" aria-labelledby="Adresse email" required tabindex="5">
                                 </div>
                                 <div class="form-group">
                                     <label for="input_504">Comment nous avez-vous connu ?</label>
-                                    <input class="form-control" type="email" required id="input_504" tabindex="6">
+                                    <input class="form-control" type="email" required id="input_504" tabindex="6" aria-labelledby="Comment nous avez-vous connu">
                                 </div>
                                 <div class="form-group">
                                     <label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
                                     </label>
-                                    <textarea id="message" class="form-control" rows="8" cols="50" required tabindex="7">
+                                    <textarea id="message" class="form-control" rows="8" cols="50" required tabindex="7" aria-labelledby="Brief de votre projet (Ajouter autant de détails que nécessaire)">
                                     </textarea>
                                 </div>
-                                <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" tabindex="8">
+                                <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" tabindex="8" aria-labelledby="Envoyer">
                                     Envoyer
                                 </button>
                             </form>
